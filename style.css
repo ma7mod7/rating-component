@@ -1,0 +1,132 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(218, 13%, 24%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Overpass", serif;
+    border: none;
+    outline: none;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    background-color:hsl(213, 19%, 18%);
+    padding: 14px 22px;
+    border-radius: 24px;
+    color: white;
+    width: 380px;
+}
+
+.startIcon{
+    padding: 8px;
+    margin-bottom: 30px;
+    background-color: var(--LightGrey);
+    border-radius: 50%;
+}
+.card__header{
+    margin-bottom: 8px;
+}
+.card__article{
+    font-size: 14px;
+    color: #7c7c7c;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+ul li{
+    background-color: var(--LightGrey);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+.selected{
+    background-color:hsl(25, 97%, 53%) ;
+    color: black;
+}
+
+
+button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    
+}
+button:hover{
+    background-color: white;
+    transition: 0.3s;
+
+}
+/* popUp styleing*/
+.thank__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 18px 12px;
+}
+.your__rating{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LightGrey);
+    padding: 8px 5px;
+    border-radius: 20px;
+    color: hsl(25, 95%, 62%);
+    margin: auto;
+}
+h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.rating__article{
+    text-align: center;
+    color: #aeadad;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.selectedRating{
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+@media (max-width: 375px) {
+    .card {
+        width: 300px;
+        
+    }
+}
